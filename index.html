@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
     <style>
         *{
             box-sizing: border-box;
@@ -70,7 +74,7 @@
             align-items: center;
             font-size: 25px;
             color:white;
-            margin-left: 60px;
+            margin-left: 20px;
         }
         .ln:nth-child(1)
         {
@@ -109,11 +113,18 @@
         {
             box-shadow:0px 0px 20px white;
         }
+        #d{
+            background-color: black;
+        }
     </style>
 </head>
 <body>
    
-   <nav  class="navbar navbar-expand-sm bg-dark navbar-dark">
+   <nav  class="navbar navbar-expand-md bg-dark navbar-dark">
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
        <ul class="navbar-nav ">
            <li class="nav-brand text-uppercase ml-4" id="ld">
                <a class="nav-link"><img id="logo" width="60" src="https://lh3.googleusercontent.com/dx4XknMTTrnAurCjAYDp-NcWbylOTPPuSbBRfW-1m3Ijf6z6N9m9Tuh9y8vA3YfhxQrV7w=s85" alt="" class="img-fluid"></a>
@@ -141,7 +152,16 @@
    <div class="jumbotron bg-primary text-light m-0" ><h1 class="text-center text-capitalize">welcome to my portfolio website </h1></div>
    <div class=" bg-dark text-light border p-5 m-0" ><span class="text-center d-block text-capitalize">hey Iam Shyam m etigatti and iam a programmer</span></div>
 
-   <div class="container-fluid bg-se p-2 m-0 d-flex justify-content-center align-items-center"><img width="526" src="https://cdn.pixabay.com/photo/2018/03/10/18/03/laptop-3214756__340.png" alt="" class="img-fluid pr-0 mr-0"><img width="522" src="https://cdn.pixabay.com/photo/2018/03/17/09/53/workplace-3233497_960_720.jpg" alt="" class="img-fluid  pl-0 ml-1"></div>
+   <div class="container" id="d">
+       <div class="row">
+           <div class="col-md-6 col-lg-6 col-sm-12 m-auto p-auto">
+                  <img width="522" src="https://cdn.pixabay.com/photo/2018/03/10/18/03/laptop-3214756__340.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12 m-auto p-auto">
+                <img width="522" src="https://cdn.pixabay.com/photo/2018/03/17/09/53/workplace-3233497_960_720.jpg" alt="" class="img-fluid">
+            </div>
+         </div>
+   </div>
    <!-- about me -->
    <div class="container-fluid mt-1 bg-dark p-5 text-white">
        <span class="d-block text-center text-uppercase m-4 p-4"> <h2>About Me</h2></span>
@@ -330,15 +350,15 @@
 
    <div class=" container-fluid text-center bg-secondary text-capitalize p-2 mt-0"><h4 class="text-white text-capitalize ">contact</h4> </div>
     <div class="container-fluid bg-dark p-4 d-flex justify-content-center align-items-center">
-     <a  class="ln" href="https://www.facebook.com/shyam.etigatti" target="_blank"><i  class="fa fa-facebook p-2 mx-4 "></i></a>
-     <a  class="ln" href="https://www.instagram.com/shyam_avengers/" target="_blank"><i class="fa fa-instagram p-2 mx-4 "></i></a>
-     <a  class="ln" href="https://www.linkedin.com/in/shyam-etigatti-483bb2190/" target="_blank"><i class="fa fa-linkedin p-2 mx-4 "></i></a>
-    <a href="https://www.github.com/shyam7e"target="_blank" class="ln"><i class="fa fa-github"></i></a>
+     <a  class="ln" href="https://www.facebook.com/shyam.etigatti" target="_blank"><i  class="fa fa-facebook mx-2  "></i></a>
+     <a  class="ln" href="https://www.instagram.com/shyam_avengers/" target="_blank"><i class="fa fa-instagram  mx-2 "></i></a>
+     <a  class="ln" href="https://www.linkedin.com/in/shyam-etigatti-483bb2190/" target="_blank"><i class="fa fa-linkedin mx-2 "></i></a>
+    <a href="https://www.github.com/shyam7e"target="_blank" class="ln"><i class="fa fa-github  mx-2"></i></a>
     </div>
 <div id="ad" class="container-fluid bg-secondary mb-4"></div>
    <div class="bg-dark p-4">
-    <span class="text-white d-block">Gmail:</span>
-    <span class="  text-white " > shyam7e@gmail.com</span>
+    <div><span class="text-white ">Gmail:shyam7e@gmail.com</span></div>
+    <div><span class="text-white text-capitalize">developed by shyam m etigatti</span></div>
        <span class="d-block text-center ml-4 text-white text-capitalize">@copyright Shyam m etigatti </span>
         <span class=" d-block text-center ml-4 text-center text-white text-capitalize">
                all rights reserved 
